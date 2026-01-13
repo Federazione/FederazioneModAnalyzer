@@ -1,7 +1,7 @@
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         Title="Federazione Mod Analyzer"
-        Height="500" Width="800"
-        Background="#111">
+        Height="550" Width="900"
+        Background="#0f0f0f">
 
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -10,17 +10,19 @@
         </Grid.RowDefinitions>
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-            <Button Name="BtnSystem" Content="System" Margin="5" />
-            <Button Name="BtnMods" Content="Mods" Margin="5" />
-            <Button Content="USB" Margin="5" />
-            <Button Content="Recycle Bin" Margin="5" />
+            <Button Name="BtnSystem" Content="System" Margin="5"/>
+            <Button Name="BtnBam" Content="BAM" Margin="5"/>
+            <Button Name="BtnUSB" Content="USB" Margin="5"/>
+            <Button Name="BtnMods" Content="Mods" Margin="5"/>
+            <Button Name="BtnRecycle" Content="Recycle Bin" Margin="5"/>
         </StackPanel>
 
         <TextBox Name="LogBox"
                  Grid.Row="1"
-                 Background="#000"
-                 Foreground="Red"
+                 Background="#000000"
+                 Foreground="#ff4c4c"
                  FontFamily="Consolas"
+                 FontSize="13"
                  IsReadOnly="True"
                  VerticalScrollBarVisibility="Auto"/>
     </Grid>
